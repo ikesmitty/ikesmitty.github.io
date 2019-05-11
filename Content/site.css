@@ -1,0 +1,11 @@
+.profileimage {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.nounderline {
+    text-decoration: none !important;
+    color: black !important;
+}
