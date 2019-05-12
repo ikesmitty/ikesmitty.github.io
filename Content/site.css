@@ -9,3 +9,35 @@
     text-decoration: none !important;
     color: black !important;
 }
+
+.nounderlineDownload {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.experienceIMG {
+    height: 200px;
+    width: 200px;
+}
+
+.fa-circle {
+    color: #007bff;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.iconText {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.contactIcon {
+    color: black;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.contactText {
+    margin-left: 20px;
+    font-size: 15px;
+}

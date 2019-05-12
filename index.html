@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a id="HomeLink" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a id="ExperienceLink" class="nav-link" href="#">Experience</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a id="ResumeLink" class="nav-link" href="#">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -39,10 +39,11 @@
     </nav>
     <div class="container">
         <div class="row">
+            <!-- HOME PAGE -->
             <div id="Home" class="col-lg-12">
                 <div class="row my-5">
                     <div class="col-lg-6">
-                        <img src="./Images/PersonalPicture.jpg" class="rounded-circle profileimage"/>
+                        <img src="./Images/PersonalPicture.jpg" class="rounded-circle profileimage" />
                     </div>
                     <div class="col-lg-6 my-5">
                         <h3 class="text-center">About Me:</h3>
@@ -50,15 +51,122 @@
                             <p>My name is Isaac Smith. I'm a 24 year old software developer based out of Virginia. I graduated from Grand Valley State University with a degree in Computer Science in May 2017.</p>
                         </div>
                         <div>
-                            <p>Hobbies.</p>
+                            <p>
+                                Along with being a full time software developer I like spending a lot of my free time doing outdoor activities with my fiance. We moved from Grand Rapids MI to Lynchburg VA in the fall of 2018 so she could pursue medical school.
+                                In our short time in Virginia we have been doing our best to explore as many local hiking trails, lakes, and restaurants as we can.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-12">
+                        <h3>Contact Info:</h3>
+                        <div class="row ml-2 mt-3">
+                            <span class="fa fa-envelope-open contactIcon"></span>
+                            <span class="contactText"><a href="mailto: smithi@mail.gvsu.edu">smithi@mail.gvsu.edu</a></span>
+                        </div>
+                        <div class="row ml-2 mt-3">
+                            <span class="fa fa-phone contactIcon"></span>
+                            <span class="contactText">+1 (269) 804-9135</span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- EXPERIENCE PAGE -->
             <div id="Experience" class="col-lg-12" style="display: none;">
-                About Page
+                <h1 class="text-center mt-4">Here's what I've done so far</h1>
+                <hr />
+                <div class="row my-5">
+                    <div class="col-lg-3">
+                        <img class="rounded-circle border border-dark experienceIMG border p-3" src="Images/atmosphereSky.png" />
+                    </div>
+                    <div class="col-lg-9 expInfoHolder p-0">
+                        <a href="https://www.amway.com/at-home/atmosphere-sky"><h5>Amway - Atmosphere Sky Mobile Development Team</h5></a>
+                        <h6>Software Developer - 05/2017 to 09-2018</h6>
+                        <p>
+                            During my time on the Atmosphere Sky Mobile Application team I performed cross platform agile development utilizing C# asp.net and Xamarin Studio. It was my job to work with our Techincal Architect, Designers, Product Owner, Stakeholders, and both internal and external teams
+                            to create and implement new features into our mobile app to maximize our users experience. Along with developing new features I was tasked with fixing bugs and developing more robust unit testing. During my time at Amway I was able to increase product registration
+                            by 40% by implementing one-touch registration into our application.
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-3">
+                        <img class="rounded-circle border border-dark experienceIMG border p-3" src="Images/gvsu.png" />
+                    </div>
+                    <div class="col-lg-9 expInfoHolder p-0">
+                        <a href="https://www.gvsu.edu/"><h5>Grand Valley State University</h5></a>
+                        <h6>B.S. in Computer Science - earned May 2017</h6>
+                        <p>
+                            I feel very fortunate to have been able to attend GVSU. Their Computer Science program allowed me to continuously learn and grow as a developer as well as meet long lasting friends and contacts during the process. I was able to work on many different projects
+                            both independently and in group settings. The GVSU CiS program was a close knit community where we were all able to help each other learn and grow and I believe having this close knit experience helped me become a better teammate and enhanced my ability to help and learn
+                            from others. If there's one thing I was able to take away from my undergrad experience is that you can learn something from everyone and exploring new ideas and concepts can only help you grow as a person and professional.
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-3">
+                        <img class="rounded-circle border border-dark experienceIMG border p-3" src="Images/Amway.jpg" />
+                    </div>
+                    <div class="col-lg-9 expInfoHolder p-0">
+                        <a href="#"><h5>Amway - ATLAS Application Administration</h5></a>
+                        <h6>Intern - 03/2015 to 05-2017</h6>
+                        <p>
+                            While pursuing a degree in Computer Science I interned on Amway's ATLAS Application Administration team. I was in charge of creating reporting sites for our applications to display back-end server and job information to monitor our systems.
+                            In addition to software monitoring I was able to create Jira workflows to handle our incident and patch approval process for better tracking and insight on work being done on our team.
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-3">
+                        <img class="rounded-circle border border-dark experienceIMG border p-3" src="Images/gvsu.png" />
+                    </div>
+                    <div class="col-lg-9 expInfoHolder p-0">
+                        <a href="https://www.gvsu.edu/it/helpdesk/"><h5>Grand Valley State University - IT</h5></a>
+                        <h6>Student Technician - 08/2014 to 07-2015</h6>
+                        <p>
+                            One of the jobs I was fortunate enough to have while attending Grand Valley was as a IT Student Technician. I was in charge of supervisor multiple labs around campus and troubleshooting/fixing any profressor or student concerns when using classroom and lab equipment.
+                        </p>
+                    </div>
+                </div>
+                <h1 class="text-center mt-4">Relevant Skills</h1>
+                <hr />
+                <div class="row ml-4 mt-5">
+                    <span class="fa fa-circle"></span>
+                    <span class="iconText">C# / ASP.NET MVC</span>
+                </div>
+                <div class="row ml-4 mt-3">
+                    <span class="fa fa-circle"></span>
+                    <span class="iconText">Javascript</span>
+                </div>
+                <div class="row ml-4 mt-3">
+                    <span class="fa fa-circle"></span>
+                    <span class="iconText">HTML / CSS</span>
+                </div>
+                <div class="row ml-4 mt-3">
+                    <span class="fa fa-circle"></span>
+                    <span class="iconText">SQL</span>
+                </div>
+                <div class="row ml-4 mt-3 mb-5">
+                    <span class="fa fa-circle"></span>
+                    <span class="iconText">Agile Development</span>
+                </div>
             </div>
         </div>
+
+        <!-- RESUME PAGE-->
+        <div id="Resume" class="col-lg-12" style="display: none;">
+            <div class="row my-5">
+                <div class="col-lg-2">
+                    <h1>Resume: </h1>
+                </div>
+                <div class="col-lg-6">
+                    <button type="button" class="btn btn-primary btn-lg"><a class="nounderlineDownload" href="Resume/IsaacSmithResume6-24-2018.pdf">Download</a></button>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <footer class="page-footer mb-3">
